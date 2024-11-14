@@ -94,6 +94,10 @@ function hitungIpkIPS(ipsPerSemester) {
     return jumlahSemester > 0 ? totalIps / jumlahSemester : 0;
 }
 
+app.get("/", (req,res) => {
+    res.send("SELAMAT DATANG");
+});
+
 // Endpoint untuk menampilkan daftar seluruh mahasiswa
 app.get("/mahasiswa", (req, res) => {
   db.query(`SELECT * FROM mahasiswa`, (err, results) => {
