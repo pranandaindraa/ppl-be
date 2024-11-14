@@ -9,13 +9,18 @@ app.use(bodyParser.json());
 // Menambahkan middleware CORS untuk mengizinkan akses dari semua domain
 app.use(cors());  // Mengizinkan semua domain untuk mengakses API
 
+// Host	d6q8diwwdmy5c9k9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	
+// Username	eqohutq5hjlo9cv3	
+// Password	cytqv4uh3xkpv0wk	
+// Port	3306	
+// Database	kfgy6rttnmne0moz
 
 // Konfigurasi koneksi MySQL
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",       
-  password: "",       
-  database: "ipk"  
+  host: "d6q8diwwdmy5c9k9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  user: "eqohutq5hjlo9cv3",       
+  password: "cytqv4uh3xkpv0wk",       
+  database: "kfgy6rttnmne0moz"  
 });
 
 db.connect((err) => {
