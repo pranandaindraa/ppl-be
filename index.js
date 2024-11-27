@@ -17,10 +17,15 @@ app.use(cors());  // Mengizinkan semua domain untuk mengakses API
 
 // Konfigurasi koneksi MySQL
 const db = mysql.createConnection({
-  host: "d6q8diwwdmy5c9k9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-  user: "eqohutq5hjlo9cv3",       
-  password: "cytqv4uh3xkpv0wk",       
-  database: "kfgy6rttnmne0moz"  
+  // host: "d6q8diwwdmy5c9k9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  // user: "eqohutq5hjlo9cv3",       
+  // password: "cytqv4uh3xkpv0wk",       
+  // database: "kfgy6rttnmne0moz"  
+
+  host: "34.128.100.251",
+  database: "db_ppl",
+  user: "user-service",
+  password: "(d*/E2ju@F7wM^6]"
 });
 
 db.connect((err) => {
