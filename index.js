@@ -23,7 +23,7 @@ const db = mysql.createConnection({
   // database: "kfgy6rttnmne0moz"  
 
   host: "34.128.100.251",
-  database: "db_ppl",
+  database: "db_kfgy6rttnmne0moz",
   user: "user-service",
   password: "(d*/E2ju@F7wM^6]"
 });
